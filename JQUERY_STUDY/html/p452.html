@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=s, initial-scale=1.0" />
+    <title>기본 필터 선택자</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td {
+        border: 1px solid #333;
+      }
+      li {
+        color: white;
+        margin: 5px;
+      }
+    </style>
+    <script src="../js/jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("tr:even").css("background", "red"); // tr요소중 짝수행만 선택
+        $("tr:odd").css("background", "oarange"); // tr 요소중 홀수행만 선택
+        $("td:first").css("background", "yellow"); // 첫번째 td 요소를 선택
+        $("td:last").css("background", "green"); //  마지막 td 요소를 선택
+        $(":header").css("background", "blue"); // 헤딩(h1~h6) 요소를 선택
+        $("li:eq(0)").css("background", "navy"); // index가 0인 li 요소를 선택
+        $("li:gt(0)").css("background", "purple"); // index가 0보다 큰 li 요소들을 선택
+        $("li:lt(3)").css("border", "4px solid gray"); //index가 3보다 작은 li 요소들을 선택
+        $(":root").css("background", "lightgray"); //  html을 의미한다.
+        (function upDown() {
+          $("h2").slideToggle(2000, upDown);
+        })();
+        $(":animated").css("border", "4px solid darkred"); // 움직이는 요소를 선택
+      });
+    </script>
+  </head>
+  <body>
+    <h1>제목1</h1>
+    <h2>제목2</h2>
+    <table>
+      <caption>
+        기본 필터 선택자
+      </caption>
+      <colgroup>
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li class="bg">내용1</li>
+      <li class="bg">내용2</li>
+      <li class="bg">내용3</li>
+      <li>내용4</li>
+    </ul>
+  </body>
+</html>

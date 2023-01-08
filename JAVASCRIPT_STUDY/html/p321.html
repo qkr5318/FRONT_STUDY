@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data type</title>
+    <script>
+      //number
+      //number 데이터는 정수, 소수점, 지수를 표현할 수 있다.
+      var num1 = 10;
+      var num2 = 10.2;
+      var num3 = 1e2; // 1e+2는 1*10의 2승을 의미한다
+      document.write(num1 + ", " + num2 + ", " + num3 + "<br>");
+
+      // String
+      // String 데이터는 '' , "" 으로 표현할 수 있다. 보통 문자데이터는 작은따옴표로 많이 표현한다.
+      var str1 = "문자";
+      var str2 = "문자는 '문자'";
+      var str3 = '문자는 "문자"';
+      var str4 = "you're too smart...";
+      document.write(str1 + ", " + str2 + ", " + str3 + ", " + str4 + "<br>");
+
+      // bollean
+      // bollean 데이터는 true(참) 와 false(거짓)의 값을 표현합니다.
+      // bollean에서 0의 값은 false를 의미하며 0값 이외의 숫자나 문자는 true를 의미한다
+      var com1 = 5 > 4;
+      var com2 = 5 < 4;
+      document.write(com1 + ", " + com2 + "<br>");
+
+      // undefined
+      // undefined 데이터는 변수는 선언하였으나 데이터 값을 지정하지 않았을 경우나 객체의 속성 값을 지정하지 않았을 경우에 자동으로 저장되는 값이다.
+      var storage;
+      document.write(storage + "<br>");
+
+      // null
+      // null 데이터는 undefined와 유사하지만 변수를 빈(empty) 상태(초기화)로 만들거나, 데이터를 저장하였으나 값이 존재하지 않을 때 null값을 반환한다 bollean때 undefined나 null은 false다.
+      var gnb = document.getElementById("gnb");
+      document.write(gnb + "<br>");
+
+      // typeof
+      // typeof 명령 벼눗에 저장되어 있는 데이터의 타입을 알아보려면 typeof명령을 사용한다.
+      var type1 = 10;
+      var type2 = "문자";
+      var type3 = true;
+      document.write(typeof type1 + ", " + typeof type2 + ", " + typeof type3);
+    </script>
+  </head>
+  <body></body>
+</html>
