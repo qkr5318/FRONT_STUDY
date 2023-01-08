@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>링크</title>
+  </head>
+  <body>
+    <!-- a 링크
+        1. 다른 html 문서의 이동(외부링크)이나 동일한 html 문서 내에서 이동(내부링크), 이메일 주소에 링크를 지정할 수 있다.
+        2. href 속성은 링크의 목적지를 지정할 수 있다.
+        3.이전 버전(xhtml1.0)에서는 블록 레벨 요소를 포함할 수 없었지만, html5에서는 블록레벨 요소도 폼함할 수 있게 되었다. 다만 input, button, 다른 link(a)등의 요소들은 포함할 수 없습니다.-->
+    <h1>a 태그</h1>
+    <a href="http://icoxpublish.com">아이콕스</a>
+    <!-- 외부링크 방법 -->
+    <a href="mailto:icoxpub@naver.com">icoxpub@naver.com</a>
+    <!-- 이메일 주소 링크 방법 -->
+    <a href="#">
+      <section>
+        <h2>새로나온책</h2>
+        <p>반응형 웹퍼블리싱</p>
+      </section>
+    </a>
+    <!-- a태그가 인라인 요소이지만 상황에 따라 블록 레벨 요소도 포함할 수 있는 예 -->
+    <a href="#content">본문바로가기</a>
+    <p id="content">본문내용</p>
+    <!-- a링크에 바로가기를 클릭하면 id 속성에 위치로 가라는 기호이다. -->
+    <!-- a태그 속성 중 target속성은 링크된 html 묹서를 어떤 방식으로 브라우저에 보여 줄 것인 가에 대한 속성이다. target 속성 값에는 _self, _black, _parent, _top이 있는데 이중 _black를 가장 많이 사용한다. blank는 브라우저에서 새탭 새창으로 보여준다 -->
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하위 선택자</title>
+    <style type="text/css">
+      /* 하위 선택자는 요소 내부에 있는 모든 해당 요소를 가리키며, 선택자 사이를 공백으로 분리
+        abox 클래스 내부에 있는 모든p 태그들의 문자를 파란색으로 표시하도록 속성부여 
+        abox 외부에 있는 p는 속성 부여가 되지않는 것을 볼 수 있다 */
+      .abox p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="abox">
+      <p>7월의 여행지</p>
+      <p>8월의 여행지</p>
+      <ul>
+        <li>
+          <p>1주차 여행지</p>
+        </li>
+        <li>
+          <p>2주차 여행지</p>
+        </li>
+      </ul>
+    </div>
+    <p>내년의 여행지</p>
+  </body>
+</html>
