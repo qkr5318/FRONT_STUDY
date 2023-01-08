@@ -1,0 +1,5 @@
+@charset "utf-8";
+/* css 파일의 상단에는 @charset "utf-8";등 html문서에서 지정한 것과 동일한 문자셋을 지정합니다. */
+p {
+  color: red;
+}
