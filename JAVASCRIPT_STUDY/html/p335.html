@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>논리연산자</title>
+    <script>
+      /* 논리 연산자의 종류
+            && (AND연산자) --> a&&b, a와 b 모두(true)일 때 true가 된다
+            || (OR연산자) --> a||b, a와 b중 하나만 true일 때 true가 된다
+            ! (NOT연산자) --> !a, a가 true이면 false, false이면 true로 바꾸어 줍니다.
+        
+        */
+      var logic1, logic2, logic3, logic4, logic5;
+      logic1 = 3 > 2 && 5 > 3;
+      document.write(logic1 + "<br>"); // true
+      logic2 = 3 < 2 && 5 > 3;
+      document.write(logic2 + "<br>"); // false
+      logic3 = 3 > 2 || 5 > 3;
+      document.write(logic3 + "<br>"); // true
+      logic4 = 3 < 2 || 5 < 3;
+      document.write(logic4 + "<br>"); // false
+      logic5 = !(3 < 2);
+      document.write(logic5 + "<br>"); // true
+      logic6 = !(3 > 2);
+      document.write(logic6); // false
+    </script>
+  </head>
+  <body></body>
+</html>

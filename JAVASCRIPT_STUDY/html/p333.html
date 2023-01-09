@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비교연산자</title>
+    <script>
+      // 비교 연산자는 값을 비교하여 결과 값을 Boolean(논리) 값인 'true'나 'false'로 반환한다
+      var comparison1 = 5 > 2; // 5가 2보다 크다
+      document.write(comparison1 + "<br>"); //true
+      var comparison2 = 5 < 2; // 5가 2보다 작다
+      document.write(comparison2 + "<br>"); //false
+      var comparison3 = 5 == 5; // ==연산자의 경우 데이터 타입은 비교하지 않는다.
+      document.write(comparison3 + "<br>"); //true
+      var comparison4 = 5 == "5"; //
+      document.write(comparison4 + "<br>"); //true
+      var comparison5 = 5 === "5"; // === 연산자의 경우 데이터 타입까지 비교한다.
+      document.write(comparison5 + "<br>"); //false
+      var comparison6 = 5 != "5";
+      document.write(comparison6 + "<br>"); //false
+      var comparison7 = 5 !== "5";
+      document.write(comparison7 + "<br>"); //true
+    </script>
+  </head>
+  <body></body>
+</html>

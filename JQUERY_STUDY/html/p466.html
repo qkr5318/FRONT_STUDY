@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기타 탐색 선택자</title>
+    <style>
+      * {
+        margin: 5px;
+      }
+    </style>
+    <script src="../js/jquery-3.6.3.js"></script>
+    <script>
+      $(function () {
+        $("#m1 > div").add("#m1 > p").css("border", "2px solid red");
+        // id인 m1의 자식인 div태그와 m1의 자식인 p요소를 선택
+        $("#m2").children("p").addBack().css("border", "2px solid orange");
+        // p요소와 이전 선택요소 div을 선택한다
+        $("#m3").find("span").css("border", "2px solid yellow").end().find("em").css("border", "2px solid green");
+        //id인 m3의 span태그를 찾아 속성부여후 실행이 끝나면 처음선택자인 m3로 다시 돌아와 em을 찾아 css가 실행된다.
+        if ($("#m4").children().is("p")) {
+          // 선택한 요소를 판별해 주는 선택자로 보통 if문의 조건식에 사용된다
+          $("#m4").children().css("color", "blue");
+          console.log("p 요소가 존재합니다.");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="m1">
+      <div>내용1_1</div>
+      <p>내용1_2</p>
+    </div>
+    <div id="m2">
+      <p>내용2</p>
+    </div>
+    <div id="m3"><span>내용3_1</span><em>내용3_2</em></div>
+    <div id="m4">
+      <p>내용4</p>
+    </div>
+  </body>
+</html>

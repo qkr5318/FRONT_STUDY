@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>each() 메서드 선택자에게 적용</title>
+    <script src="../js/jquery-3.6.3.js"></script>
+    <script>
+      $(function () {
+        $("div").each(function (index, element) {
+          // each(function(index, element){...})의 형태처럼 메서드의 매개변수 값으로 함수가 전달되어 반복적으로실행하는 함수의 형태를 callback 함수이다
+          document.write(index + "<br>"); // li 요소의 index, 0(첫번째 요소) 부터 시작
+          document.write(element + "<br>"); // li 요소 자신
+          document.write($(this).attr("class") + "<br>"); // li 요소 각각의 class를 취득
+          // attr() 메서드는 attribute(속성)에 관련된 메서드 이다.
+          // $(this) 선택자는 개별요소를 선택하는 기능을 가지고 있다.
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="m1">내용1</div>
+    <div class="m2">내용2</div>
+    <div class="m3">내용3</div>
+  </body>
+</html>

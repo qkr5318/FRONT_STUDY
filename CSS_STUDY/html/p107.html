@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자식 선택자</title>
+    <style>
+      .abox > p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 자식 선택자
+        자식 선택자는 요소 내부에 있는 해당 요소를 가리키지만, 하위 요소의 하위 요소는 가리키지 않으며
+        선택자는 사이를 ">"으로 분리한다-->
+    <div class="abox">
+      <p>7월의 여행지</p>
+      <ul>
+        <ul>
+          <li>
+            <p>1주차 여행지</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>2주차 여행지</p>
+          </li>
+        </ul>
+      </ul>
+      <p>8월의 여행지</p>
+    </div>
+    <p>내년의 여행지</p>
+  </body>
+</html>

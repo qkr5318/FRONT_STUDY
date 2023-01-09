@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>each() 메서드</title>
+    <script src="../js/jquery-3.6.3.js"></script>
+    <script>
+      // each() 메서드는 요소에 개별적으로 접근하여 for문과 같은 반복적인 명령 처리가 가능하다
+      $(function () {
+        var city = ["서울", "대구", "대전", "울산"];
+        $.each(city, function (index, value) {
+          document.write(index + ": " + value + "<br>");
+        });
+        var subjectInfo = {
+          subject: "html",
+          grade: 1,
+          days: 20,
+        };
+        $.each(subjectInfo, function (key, value) {
+          document.write(key + ": " + value + "<br>");
+        });
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>탐색 선택자</title>
+    <style>
+      * {
+        margin: 5px;
+      }
+    </style>
+    <script src="../js/jquery-3.6.3.js"></script>
+    <script>
+      $(function () {
+        $("#m1").children().css("border", "2px solid red");
+        //id m1의 자식요소인 a태그와 span태그에게 속성 부여
+        $("#m2").children("span").css("border", "2px solid orange");
+        //id m2의 자식요소인 span을 지정하여 속성부여
+        $("#m3 span").closest("div").css("border", "2px solid yellow");
+        // span태그의 부모가 되는 첫번째 div 태그에게 속성부여
+        $("#m4 > span.m").nextUntil("em").css("border", "2px solid green");
+        // span class m에 다음 요소부터 em요소 전까지 속성부여
+        $("#m5 > span").filter(".m").css("border", "2px solid blue");
+        // id m5요소에 자식요소인 span태그중 class가 m에게 속성 부여
+        $("#m6 > div").has("span").css("border", "2px solid navy");
+        // id m6요소에 자식 요소 div중 span에게 속성부여
+      });
+    </script>
+  </head>
+  <body>
+    <div id="m1"><a href="#">내용1_1</a><span>내용1_2</span></div>
+    <div id="m2"><a href="#">내용2_1</a><span>내용2_2</span></div>
+    <div id="m3">
+      <div><span>내용3_1</span></div>
+    </div>
+    <div id="m4"><span class="m">내용4_1</span><span>내용4_2</span><span>내용4_3</span><em>내용4_4</em></div>
+    <div id="m5"><span class="m">내용5_1</span><span>내용5_2</span><span>내용5_3</span></div>
+    <div id="m6">
+      <div><span>내용6_1</span></div>
+      <div>내용6_2</div>
+    </div>
+  </body>
+</html>
