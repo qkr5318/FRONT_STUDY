@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>while, do while문</title>
+    <script>
+      var x = 0;
+      var y = 0;
+      var z = 6;
+      var sum1 = 0;
+      var sum2 = 0;
+      while (x <= 5) {
+        sum1 += x;
+        x++;
+      }
+      document.write("x : " + sum1);
+      do {
+        sum2 += y;
+        y++;
+      } while (y <= 5);
+      document.write("y : " + sum2);
+      do {
+        z++;
+      } while (z <= 5);
+      document.write("z : " + z);
+      //   do while문은  do를 먼저 실행하기 때문에 첫 번째 실행 조건은 상관없이 실행한다.
+    </script>
+  </head>
+  <body></body>
+</html>

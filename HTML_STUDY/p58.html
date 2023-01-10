@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>표</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td {
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 표 생성
+        1. 표를 정의할 때 사용하느 ㄴ태그이며, 행(Row)과 열(Column)의 2차원 정보로 구성되어 있다.
+        2. 자식 요솔 반드시 tr 태그를 정의해 주어야 하며 table -> tl -> td 순으로 마크업 해야한다.
+        3. tr 태그는 table 태그의 자식 요소로 표에서 행을 정의할 때 사용하는 태그
+        4. td 태그는 tr 태그의 자식 요소로 표에서 열을 정의할 때 사용하는 태그
+        5. th 태그는 제목 역할을 하는 셀을 정의할 때 사용하는 태그
+        6. 표의 내용을 기준으로 제목 영역<thead>, 본문 영역 <tbody>, 열의 요약 영역 <tfoot>으로 구분하여 정의할 수 있다
+        7. 표는 tr 태그처럼 td나 th 태그들을 가로로 묶는 행 그룹은 있지만, 세로로 묶는 열 그룹은 없다.
+            이런 열들을 그룹으로 지정할 떄는 colgroup, col 태그로 정의하여 사용할 수 있다-->
+    <table>
+      <!--표정의-->
+      <tr>
+        <td>교과목</td>
+        <td>점수</td>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>92</td>
+      </tr>
+      <tr>
+        <td>평균</td>
+        <td>92.5</td>
+      </tr>
+    </table>
+  </body>
+</html>

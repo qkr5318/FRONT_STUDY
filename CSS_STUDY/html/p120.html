@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택자의 우선순위</title>
+    <style>
+      p {
+        color: pink;
+      }
+      #ctxt {
+        color: orange;
+      }
+      p.atxt {
+        color: blue !important;
+      }
+      p.atxt.btxt {
+        color: magenta;
+      }
+      p:first-child {
+        color: red;
+      }
+      /* 선택자 우선순위는
+      Type선택자 < class 선택자 , 가상 선택자 < id 선택자 < inline style < !important  */
+    </style>
+  </head>
+  <body>
+    <p id="ctxt" class="atxt btxt" style="color: green">한국인은 비타민 D가 부족한 사람이 많다</p>
+    <p>비타민 D는 햇빛에 있다</p>
+  </body>
+</html>
